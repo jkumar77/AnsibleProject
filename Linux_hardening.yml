@@ -1,0 +1,10 @@
+---
+- all:
+  - hosts: DEV
+    become: yes
+    tasks:
+      - name: "Create User."
+        user:
+          name: testuser
+          comment: "BO - Unix"
+...
